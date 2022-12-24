@@ -6,6 +6,9 @@ npm-debug.log
 # Tailwind stuff
 tailwindcss/
 tailwindcss
+output.css
+output.css.map
+
 
 .env
 .env.development.local
