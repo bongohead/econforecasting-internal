@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* TYPOGRAPHY */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap')
+
+body,h1,h2,h3,h4,h5,h6,p,a {
+    @apply capitalize
+}
+p {
+    @apply tracking-wider text-sm text-gray-500
+}
+
+.h1 {
+    @apply text-6xl font-black
+}
+
+.h2 {
+    @apply text-5xl font-extrabold
+}
+.h3 {
+    @apply text-4xl font-extrabold
+}
+.h4 {
+    @apply text-3xl font-extrabold
+}
+.h5 {
+    @apply text-2xl font-extrabold
+}
+.h6 {
+    @apply text-xl font-extrabold
+}
+
+/* CARD */
+.card {
+    @apply rounded bg-white border border-gray-300
+}
+.card-header {
+	@apply border-b p-6
+}
+.card-body {
+	@apply p-6
+}
+.card-footer {
+	@apply border-t p-6
+}
+
+/* BADGE */
+.badge {
+    padding: 2px 0
+    @apply px-2 
+}
+.badge-primary {
+    @apply bg-teal-200 border border-teal-300 text-teal-600 rounded lowercase
+}
+
+/*
+.btn-shadow
+    @apply text-center capitalize bg-teal-400 block py-2 px-5 rounded text-white transition-all ease-in-out duration-300 shadow-md
+    &:hover
+        @apply shadow-lg
+
+.btn
+    @apply text-center capitalize bg-teal-200 block py-2 px-5 rounded text-teal-600 transition-all ease-in-out duration-300
+    &:hover
+        @apply bg-teal-300 text-teal-800
+
+.btn-indigo
+    @apply text-center capitalize bg-indigo-500 text-indigo-100 block py-2 px-5 rounded transition-all ease-in-out duration-300
+    &:hover
+        @apply bg-indigo-600 text-indigo-200
+
+.btn-info
+    @apply text-center capitalize bg-yellow-300 text-yellow-600 block py-2 px-5 rounded transition-all ease-in-out duration-300
+    &:hover
+        @apply bg-yellow-400 text-yellow-600
+
+.btn-danger
+    @apply text-center capitalize bg-red-300 text-red-600 block py-2 px-5 rounded transition-all ease-in-out duration-300
+    &:hover
+        @apply bg-red-400 text-red-600
+
+
+.btn-gray
+    @apply text-center capitalize bg-gray-100 border border-gray-300 block py-2 px-5 rounded text-gray-600 transition-all ease-in-out duration-300
+    &:hover
+        @apply bg-white text-gray-800 border border-gray-300
+
+
+
+.btn-bs-dark
+    @apply text-center capitalize bg-gray-900 text-white block py-2 px-5 rounded transition-all ease-in-out duration-300
+    &:hover
+        @apply opacity-75
+    
+.btn-bs-primary
+    @apply text-center capitalize bg-indigo-600 text-white block py-2 px-5 rounded transition-all ease-in-out duration-300
+    &:hover
+        @apply opacity-75
+
+.btn-bs-secondary
+    @apply text-center capitalize bg-gray-500 text-white block py-2 px-5 rounded transition-all ease-in-out duration-300
+    &:hover
+        @apply opacity-75
+
+.btn-bs-success
+    @apply text-center capitalize bg-green-500 text-white block py-2 px-5 rounded transition-all ease-in-out duration-300
+    &:hover
+        @apply opacity-75
+
+.btn-bs-danger
+    @apply text-center capitalize bg-red-500 text-white block py-2 px-5 rounded transition-all ease-in-out duration-300
+    &:hover
+        @apply opacity-75
+
+.btn-bs-info
+    @apply text-center capitalize bg-yellow-500 text-white block py-2 px-5 rounded transition-all ease-in-out duration-300
+    &:hover
+        @apply opacity-75
+
+
+
+// overflow 
+.menu-overflow
+    &:focus
+        outline: none
+		
+		
+	*/

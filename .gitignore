@@ -1,0 +1,14 @@
+# Node stuff
+node_modules/
+build/
+npm-debug.log
+
+# Tailwind stuff
+tailwindcss/
+tailwindcss
+
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
