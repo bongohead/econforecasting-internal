@@ -24,7 +24,7 @@ app.use(helmet());
 app.use(cors());
 
 // Use body-parser as middleware to decode POST content
-app.use(bodyParser.json()); 
+app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 // Parse cookies
@@ -47,11 +47,8 @@ app.set("twig options", {
 });
 
 
-
-
 app.use('/', pageRouter);
 app.use('/api', endpointRouter);
-
 
 
 
