@@ -173,9 +173,6 @@ router.post('/add_user', authenticateToken, verifyPermissions('admin'), function
 				values: [username, hash, auth_level, is_active]
 			};
 
-			//return res.status(200).json({success: 1, result: {hash: hash, rows: db_result.rows}});
-
-
 			pool.query(query)
 				.then(db_result => {
 					return res.status(200).json({success: 1, result: {auth_key: auth_key, rows: db_result.rows}});
