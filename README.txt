@@ -1,6 +1,10 @@
+## TBD
+- Split out internal API vs external (third party) API. Move third party to seperate www. Internal should only serve one site.
+- Third party API needs to have middleware, rate limits etc
+- Alt
 
 ## About
-This is backend code for internal WWW. Uses TW on frontend, nginx/express/postgres on backend. Houses seperate displayed HTML endpoint as well as API endpoints with standard oath v2 (RFC 6750) authentication. 
+This is backend code for internal WWW. Uses TW on frontend, nginx/express/postgres on backend. Houses seperate displayed HTML endpoint as well as API endpoints with standard oath v2 (RFC 6750) authentication.
 Keep contained within CF Zero Trust.
 
 

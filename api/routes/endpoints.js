@@ -1,4 +1,4 @@
-const CONSTANTS = require('dotenv').config().parsed;
+const CONSTANTS = require('dotenv').config({path: '../.env'}).parsed;
 
 const router = require('express').Router();
 const Pool = require('pg').Pool; // Use Pool for non-transactional queries
@@ -83,7 +83,7 @@ router.post('/get_token', function(req, res) {
 			})
 		.then(db_result => {
 			if (db_result.rows.length !== 1) {
-				res.status(200).json({success: 0, error_message: 'invalid username or auth_key'});
+				res.status(200).json({success: 0, error_message: 'invalid username or auth_key!'});
 				return;
 			}
 
